@@ -1,4 +1,4 @@
-import { PrismaClient } from "./generated/prisma/index.js";
+import { PrismaClient } from "../../generated/prisma/index.js";
 const prisma = new PrismaClient();
 
 export class MongoDbCreateUserRepository {
@@ -11,7 +11,7 @@ export class MongoDbCreateUserRepository {
                 idade: createUserParams.idade,
             },
         });
-        
-        return { user: createUserParams };
+
+        return createUserParams;
     }
 }

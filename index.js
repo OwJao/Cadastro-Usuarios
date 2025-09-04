@@ -1,4 +1,5 @@
 import { PrismaClient } from "./generated/prisma/index.js";
+import { CreateUserController } from "./src/controllers/create-user.js";
 import express from "express";
 const app = express();
 const prisma = new PrismaClient();
@@ -6,15 +7,9 @@ const prisma = new PrismaClient();
 app.use(express.json());
 
 app.post("/usuarios", async (req, res) => {
-    await prisma.user.create({
-        data: {
-            primeiro_nome: req.body.primeiro_nome,
-            ultimo_nome: req.body.ultimo_nome,
-            email: req.body.email,
-            idade: req.body.idade,
-        },
-    });
-    res.status(201).json({ user: req.body });
+    const createUserController = new CreateUserController();
+    const user = await createUserController.execute(req);
+    res.status(user.statusCode).json(user.body);
 });
 
 app.put("/usuarios/:id", async (req, res) => {
