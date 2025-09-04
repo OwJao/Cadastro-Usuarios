@@ -6,7 +6,8 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "prepare": "husky",
-        "start:dev": "node --watch index.js"
+        "start:dev": "node --watch index.js",
+        "frontend": "cd ./frontend && npx vite"
     },
     "keywords": [],
     "author": "",
