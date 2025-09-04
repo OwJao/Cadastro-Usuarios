@@ -4,8 +4,10 @@ import { UpdateUserController } from "./src/controllers/update.user.js";
 import { DeleteUserController } from "./src/controllers/delete-user.js";
 
 import express from "express";
+import cors from "cors";
 const app = express();
 app.use(express.json());
+app.use(cors());
 
 app.post("/usuarios", async (req, res) => {
     const createUserController = new CreateUserController();
