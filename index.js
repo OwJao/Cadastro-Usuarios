@@ -1,6 +1,7 @@
 import { CreateUserController } from "./src/controllers/create-user.js";
 import { GetUsersController } from "./src/controllers/get-users.js";
 import { UpdateUserController } from "./src/controllers/update.user.js";
+import { DeleteUserController } from "./src/controllers/delete-user.js";
 
 import express from "express";
 const app = express();
@@ -23,6 +24,12 @@ app.put("/usuarios/:id", async (req, res) => {
     const updatedUser = await updateUserController.execute(req);
     res.status(updatedUser.statusCode).json(updatedUser.body);
 })
+
+app.delete("/usuarios/:id", async (req, res) => {
+    const deleteUserController = new DeleteUserController();
+    const result = await deleteUserController.execute(req);
+    res.status(result.statusCode).json(result.body);
+});
 
 app.listen(3000, () => {
     console.log("Servidor rodando na porta 3000");
