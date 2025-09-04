@@ -5,10 +5,6 @@ export class CreateUserUseCase {
         const mongoDbCreateUserRepository = new MongoDbCreateUserRepository();
         const user = await mongoDbCreateUserRepository.execute(createUserParams);
 
-        // TO DO => verificar se o e-mail já está em uso
-        
-
-
         return user;
     }
 }
