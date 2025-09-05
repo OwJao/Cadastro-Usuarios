@@ -73,8 +73,7 @@ Siga os passos abaixo para rodar o projeto em seu ambiente local.
 
 **1. Clone o repositório:**
 ```bash
-git clone [https://github.com/seu-usuario/nome-do-repositorio.git](https://github.com/seu-usuario/nome-do-repositorio.git)
-cd nome-do-repositorio
+git clone https://github.com/OwJao/Cadastro-Usuarios.git
 ```
 **2. Configure do Backend:**
 ```bash
