@@ -73,8 +73,7 @@ Siga os passos abaixo para rodar o projeto em seu ambiente local.
 
 **1. Clone o repositório:**
 ```bash
-git clone [https://github.com/seu-usuario/nome-do-repositorio.git](https://github.com/seu-usuario/nome-do-repositorio.git)
-cd nome-do-repositorio
+git clone https://github.com/OwJao/Cadastro-Usuarios.git
 ```
 **2. Configure do Backend:**
 ```bash
@@ -89,8 +88,11 @@ DATABASE_URL="mongodb+srv://SEU_USUARIO:SUA_SENHA@SEU_CLUSTER_HOST/NOME_DO_BANCO
 # Execute as migrações do Prisma para criar as tabelas no banco
 npx prisma migrate dev
 
+# Executar comando para gerar o cliente Prisma em seu projeto
+npx prisma generate
+
 # Inicie o servidor backend
-npm run dev
+npm run start:dev
 ```
 **3. Configure do Frontend:**
 ```bash
