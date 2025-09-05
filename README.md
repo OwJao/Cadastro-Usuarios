@@ -89,7 +89,7 @@ DATABASE_URL="mongodb+srv://SEU_USUARIO:SUA_SENHA@SEU_CLUSTER_HOST/NOME_DO_BANCO
 npx prisma migrate dev
 
 # Inicie o servidor backend
-npm run dev
+npm run start:dev
 ```
 **3. Configure do Frontend:**
 ```bash
