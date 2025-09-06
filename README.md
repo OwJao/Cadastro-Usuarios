@@ -15,9 +15,10 @@
 
 ## 📖 Sobre o Projeto
 
-Este é um projeto full-stack de um sistema de Cadastro de Usuários. A aplicação permite <strong>cadastrar</strong>, <strong>visualizar</strong> e <strong>deletar</strong> usuários de forma simples e intuitiva.
+Este é um projeto full-stack de um sistema de Cadastro de Usuários.  
+A aplicação permite realizar operações completas de **CRUD** (Create, Read, Update, Delete) de forma simples e intuitiva.
 
-O objetivo foi construir uma aplicação moderna e robusta, com um frontend reativo desenvolvido em **React** e um backend sólido em **Node.js**, utilizando **Prisma** como ORM (Mapeamento Objeto-Relacional) para a comunicação com o banco de dados. O projeto demonstra a aplicação de boas práticas de desenvolvimento, como a separação de responsabilidades no backend em uma arquitetura limpa.
+O objetivo foi construir uma aplicação moderna e bem estruturada, com um frontend reativo desenvolvido em **React** e um backend sólido em **Node.js**, utilizando **Prisma** como ORM para a comunicação com o banco de dados. O projeto aplica boas práticas de desenvolvimento, como a separação de responsabilidades no backend em uma arquitetura limpa.
 
 <br>
 
@@ -25,6 +26,7 @@ O objetivo foi construir uma aplicação moderna e robusta, com um frontend reat
 
 -   **➕ Cadastrar novos usuários:** Adicionar usuários através de um formulário simples.
 -   **📄 Listar usuários:** Visualizar todos os usuários cadastrados em tempo real.
+-   **✏️ Editar usuários:** Atualizar os dados de um usuário existente.
 -   **❌ Excluir usuários:** Remover um usuário do banco de dados.
 
 <br>
